@@ -1,11 +1,10 @@
-package com.springboot.testing.archunit.domain;
+package com.springboot.testing.archunit.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Table;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity

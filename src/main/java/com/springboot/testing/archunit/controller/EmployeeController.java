@@ -1,19 +1,19 @@
 package com.springboot.testing.archunit.controller;
 
-import com.springboot.testing.archunit.domain.Employee;
-import com.springboot.testing.archunit.repository.EmployeeRepository;
+import com.springboot.testing.archunit.entity.Employee;
 import com.springboot.testing.archunit.service.EmployeeService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/employee")
 public class EmployeeController {
 
-    @Autowired
-    private EmployeeService employeeService;
+    private final EmployeeService employeeService;
+   // private final EmployeeRepository employeeRepository;
 
 
     @GetMapping()

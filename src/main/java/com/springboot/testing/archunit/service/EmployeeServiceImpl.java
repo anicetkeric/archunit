@@ -1,18 +1,18 @@
 package com.springboot.testing.archunit.service;
 
-import com.springboot.testing.archunit.domain.Employee;
+import com.springboot.testing.archunit.entity.Employee;
 import com.springboot.testing.archunit.repository.EmployeeRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@RequiredArgsConstructor
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
-    @Autowired
-    private EmployeeRepository employeeRepository;
+    private final EmployeeRepository employeeRepository;
 
     @Override
     public List<Employee> getAll() {

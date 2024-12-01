@@ -1,6 +1,6 @@
 package com.springboot.testing.archunit.service;
 
-import com.springboot.testing.archunit.domain.Employee;
+import com.springboot.testing.archunit.entity.Employee;
 
 import java.util.List;
 import java.util.Optional;
